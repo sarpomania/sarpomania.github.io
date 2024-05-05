@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Vehicle</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>Vehicle Manager</h1>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <button onclick="location.href='index.html'" type="button">
+              Search People
+            </button>
+          </li>
+          <li>
+            <button onclick="location.href='search_vehicle.html'" type="button">
+              Search Vehicle
+            </button>
+          </li>
+          <li>
+            <button onclick="location.href='add_vehicle.html'" type="button">
+              Add Vehicle
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div>
+      <aside>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          version="1.1"
+          width="256"
+          height="256"
+          viewBox="0 0 256 256"
+          xml:space="preserve"
+        >
+          <defs></defs>
+          <g
+            style="
+              stroke: none;
+              stroke-width: 0;
+              stroke-dasharray: none;
+              stroke-linecap: butt;
+              stroke-linejoin: miter;
+              stroke-miterlimit: 10;
+              fill: none;
+              fill-rule: nonzero;
+              opacity: 1;
+            "
+            transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+          >
+            <path
+              d="M 83.52 41.877 l -4.735 -4.916 L 73.106 22.77 c -0.984 -2.459 -3.208 -4.177 -5.803 -4.484 c -2.592 -0.306 -5.21 -0.552 -7.805 -0.752 c 0.019 -0.303 0.046 -0.604 0.046 -0.912 c 0 -8.02 -6.524 -14.545 -14.544 -14.545 c -8.02 0 -14.545 6.524 -14.545 14.545 c 0 0.307 0.027 0.608 0.046 0.911 c -2.593 0.2 -5.212 0.447 -7.805 0.753 c -2.595 0.307 -4.817 2.025 -5.801 4.484 l -5.68 14.191 L 6.48 41.877 c -4.45 4.621 -6.8 10.945 -6.446 17.352 l 0.526 9.521 c 0.049 0.88 0.219 1.725 0.476 2.529 v 12.759 c 0 2.142 1.743 3.885 3.885 3.885 h 12.725 c 2.143 0 3.885 -1.743 3.885 -3.885 v -5.71 h 46.934 v 5.71 c 0 2.142 1.743 3.885 3.885 3.885 h 12.726 c 2.143 0 3.886 -1.743 3.886 -3.885 V 71.275 c 0.257 -0.803 0.426 -1.646 0.475 -2.525 l 0.526 -9.522 C 90.32 52.822 87.97 46.498 83.52 41.877 z M 45 4.077 c 6.917 0 12.544 5.628 12.544 12.545 S 51.917 29.166 45 29.166 s -12.545 -5.628 -12.545 -12.545 S 38.083 4.077 45 4.077 z M 18.752 23.513 c 0.712 -1.778 2.314 -3.021 4.18 -3.241 c 2.596 -0.307 5.219 -0.555 7.815 -0.753 C 32.094 26.156 37.972 31.166 45 31.166 c 7.027 0 12.905 -5.01 14.253 -11.646 c 2.598 0.198 5.22 0.445 7.816 0.752 c 1.866 0.221 3.468 1.463 4.18 3.241 l 5.175 12.929 c -20.861 -1.055 -41.984 -1.055 -62.846 0 L 18.752 23.513 z M 7.921 43.265 l 4.594 -4.771 c 21.559 -1.13 43.413 -1.13 64.97 0 l 4.593 4.771 c 4.067 4.223 6.214 10 5.89 15.853 l -0.526 9.523 c -0.238 4.311 -3.808 7.688 -8.125 7.688 H 10.683 c -4.318 0 -7.887 -3.377 -8.125 -7.689 l -0.526 -9.521 C 1.708 53.265 3.855 47.486 7.921 43.265 z M 19.533 84.038 c 0 1.039 -0.846 1.885 -1.885 1.885 H 4.922 c -1.04 0 -1.885 -0.846 -1.885 -1.885 v -9.195 c 1.863 2.139 4.605 3.485 7.646 3.485 h 8.85 V 84.038 z M 86.963 84.038 c 0 1.039 -0.846 1.885 -1.886 1.885 H 72.352 c -1.039 0 -1.885 -0.846 -1.885 -1.885 v -5.71 h 8.85 c 3.041 0 5.783 -1.346 7.647 -3.486 V 84.038 z"
+              style="
+                stroke: none;
+                stroke-width: 1;
+                stroke-dasharray: none;
+                stroke-linecap: butt;
+                stroke-linejoin: miter;
+                stroke-miterlimit: 10;
+                fill: rgb(0, 0, 0);
+                fill-rule: nonzero;
+                opacity: 1;
+              "
+              transform=" matrix(1 0 0 1 0 0) "
+              stroke-linecap="round"
+            />
+            <path
+              d="M 15.86 68.527 h -3.635 c -0.552 0 -1 0.447 -1 1 s 0.448 1 1 1 h 3.635 c 0.552 0 1 -0.447 1 -1 S 16.412 68.527 15.86 68.527 z"
+              style="
+                stroke: none;
+                stroke-width: 1;
+                stroke-dasharray: none;
+                stroke-linecap: butt;
+                stroke-linejoin: miter;
+                stroke-miterlimit: 10;
+                fill: rgb(0, 0, 0);
+                fill-rule: nonzero;
+                opacity: 1;
+              "
+              transform=" matrix(1 0 0 1 0 0) "
+              stroke-linecap="round"
+            />
+            <path
+              d="M 77.782 68.527 h -3.648 c -0.553 0 -1 0.447 -1 1 s 0.447 1 1 1 h 3.648 c 0.553 0 1 -0.447 1 -1 S 78.334 68.527 77.782 68.527 z"
+              style="
+                stroke: none;
+                stroke-width: 1;
+                stroke-dasharray: none;
+                stroke-linecap: butt;
+                stroke-linejoin: miter;
+                stroke-miterlimit: 10;
+                fill: rgb(0, 0, 0);
+                fill-rule: nonzero;
+                opacity: 1;
+              "
+              transform=" matrix(1 0 0 1 0 0) "
+              stroke-linecap="round"
+            />
+            <path
+              d="M 31.639 61.347 h 26.723 c 0.553 0 1 -0.447 1 -1 s -0.447 -1 -1 -1 H 31.639 c -0.552 0 -1 0.447 -1 1 S 31.087 61.347 31.639 61.347 z"
+              style="
+                stroke: none;
+                stroke-width: 1;
+                stroke-dasharray: none;
+                stroke-linecap: butt;
+                stroke-linejoin: miter;
+                stroke-miterlimit: 10;
+                fill: rgb(0, 0, 0);
+                fill-rule: nonzero;
+                opacity: 1;
+              "
+              transform=" matrix(1 0 0 1 0 0) "
+              stroke-linecap="round"
+            />
+            <path
+              d="M 10.521 63.775 h 9.471 c 2.514 0 4.56 -2.046 4.56 -4.56 c 0 -2.065 -1.394 -3.877 -3.39 -4.407 l -9.471 -2.514 c -1.38 -0.365 -2.818 -0.077 -3.949 0.793 s -1.78 2.188 -1.78 3.614 v 2.514 C 5.961 61.729 8.007 63.775 10.521 63.775 z M 7.961 56.701 c 0 -0.801 0.364 -1.54 0.999 -2.029 c 0.455 -0.35 0.998 -0.531 1.554 -0.531 c 0.22 0 0.443 0.028 0.663 0.087 l 9.471 2.514 c 1.12 0.297 1.903 1.314 1.903 2.474 c 0 1.411 -1.148 2.56 -2.56 2.56 h -9.471 c -1.411 0 -2.56 -1.148 -2.56 -2.56 V 56.701 z"
+              style="
+                stroke: none;
+                stroke-width: 1;
+                stroke-dasharray: none;
+                stroke-linecap: butt;
+                stroke-linejoin: miter;
+                stroke-miterlimit: 10;
+                fill: rgb(0, 0, 0);
+                fill-rule: nonzero;
+                opacity: 1;
+              "
+              transform=" matrix(1 0 0 1 0 0) "
+              stroke-linecap="round"
+            />
+            <path
+              d="M 70.008 63.775 h 9.471 c 2.514 0 4.56 -2.046 4.56 -4.56 v -2.514 c 0 -1.427 -0.648 -2.744 -1.779 -3.614 c -1.133 -0.871 -2.574 -1.157 -3.95 -0.793 l -9.471 2.514 c -1.996 0.53 -3.39 2.342 -3.39 4.407 C 65.449 61.729 67.494 63.775 70.008 63.775 z M 69.352 56.741 l 9.471 -2.514 c 0.22 -0.059 0.442 -0.087 0.663 -0.087 c 0.556 0 1.099 0.182 1.554 0.531 c 0.635 0.489 0.999 1.229 0.999 2.029 v 2.514 c 0 1.411 -1.148 2.56 -2.56 2.56 h -9.471 c -1.411 0 -2.56 -1.148 -2.56 -2.56 C 67.449 58.056 68.231 57.038 69.352 56.741 z"
+              style="
+                stroke: none;
+                stroke-width: 1;
+                stroke-dasharray: none;
+                stroke-linecap: butt;
+                stroke-linejoin: miter;
+                stroke-miterlimit: 10;
+                fill: rgb(0, 0, 0);
+                fill-rule: nonzero;
+                opacity: 1;
+              "
+              transform=" matrix(1 0 0 1 0 0) "
+              stroke-linecap="round"
+            />
+            <path
+              d="M 42.224 21.919 c 0.179 0.273 0.479 0.442 0.805 0.453 c 0.011 0 0.022 0 0.033 0 c 0.314 0 0.611 -0.147 0.8 -0.4 L 51.89 11.27 c 0.332 -0.442 0.242 -1.069 -0.2 -1.4 c -0.44 -0.332 -1.067 -0.243 -1.399 0.2 l -7.172 9.56 l -3.371 -5.161 c -0.303 -0.462 -0.92 -0.592 -1.384 -0.291 c -0.462 0.302 -0.592 0.922 -0.291 1.384 L 42.224 21.919 z"
+              style="
+                stroke: none;
+                stroke-width: 1;
+                stroke-dasharray: none;
+                stroke-linecap: butt;
+                stroke-linejoin: miter;
+                stroke-miterlimit: 10;
+                fill: rgb(0, 0, 0);
+                fill-rule: nonzero;
+                opacity: 1;
+              "
+              transform=" matrix(1 0 0 1 0 0) "
+              stroke-linecap="round"
+            />
+          </g>
+        </svg>
+      </aside>
+      <main onkeydown="handleKeyPressForVehicleAdding(event)">
+        <label></label>
+        <input
+          type="text"
+          id="registrationPlate"
+          name="registrationPlate"
+          placeholder="Registration Plate Number"
+        />
+        <label></label>
+        <input type="text" id="make" name="make" placeholder="Make" />
+        <label></label>
+        <input type="text" id="model" name="model" placeholder="Model" />
+        <label></label>
+        <input type="text" id="color" name="color" placeholder="Color" />
+        <label></label>
+        <input type="text" id="ownerId" name="ownerId" placeholder="Owner ID" />
+        <div>
+          <button
+            onclick="addVehicle(
+            document.getElementById('registrationPlate').value,
+            document.getElementById('make').value,
+            document.getElementById('model').value,
+            document.getElementById('color').value,
+            document.getElementById('ownerId').value
+        )"
+          >
+            Add Vehicle
+          </button>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <p>&copy; Vehicle Manager</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
